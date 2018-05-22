@@ -1,7 +1,7 @@
 This is one pure vue project. It include vue2, vue-router3, webpack4, babel7. Just can use by downloading and npm install.
 
 
-#### Process 
+#### Author Create Process 
 1, 利用vue-cli构建一个简单的vue应用
 
 2, 安装babel-loader
