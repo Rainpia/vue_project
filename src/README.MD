@@ -22,7 +22,7 @@ package.json:该文件是npm的配置文件
 
 
 
-#### Process
+#### Process (已经用了5个半小时了，加上了解，查资料，了解vue创建流程)
 1, 利用vue-cli构建一个简单的vue应用
 2, 安装babel-loader
 3，安装webpack4，添加webpack.config.js [参考](https://www.valentinog.com/blog/webpack-4-tutorial/)
@@ -35,3 +35,5 @@ package.json:该文件是npm的配置文件
     - 配置vue-loader
     - 配置scss-loader
     - 配置file-loader
+5, 应用vue-router 
+6, 应用vux
