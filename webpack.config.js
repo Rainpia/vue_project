@@ -5,6 +5,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
  // 打包vue的插件
 const { VueLoaderPlugin } = require('vue-loader');
 
+//todo 该插件暂时有问题504，稍后尝试下载
 // const nodeSassMagicImporter = require('node-sass-magic-importer');
 
 const path = require('path')
@@ -62,6 +63,10 @@ module.exports = {
             
           ],
         },
+        {
+            test: /\.(jpe?g|png|gif|svg)$/i, 
+            loader: "file-loader?name=[name].[ext]"
+        }
       ]
     },
     plugins: [

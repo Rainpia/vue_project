@@ -32,4 +32,6 @@ package.json:该文件是npm的配置文件
     - 安装webpack-dev-server，热加载，（即每次改变代码都重新编译刷新）
     - 配置环境：mode:'production' || 'development', 打包跟不打包的区别
 4, 配置webpack4 and babel7 for vue.js [参考](https://markus.oberlehner.net/blog/setting-up-a-vue-project-with-webpack-4-and-babel-7/)
-    - 
+    - 配置vue-loader
+    - 配置scss-loader
+    - 配置file-loader
