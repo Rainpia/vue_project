@@ -35,5 +35,5 @@ package.json:该文件是npm的配置文件
     - 配置vue-loader
     - 配置scss-loader
     - 配置file-loader
-5, 应用vue-router 
+5, 应用vue-router [参考](https://scotch.io/tutorials/getting-started-with-vue-router)
 6, 应用vux

@@ -21,6 +21,12 @@ module.exports = {
       path: path.join(root, 'dist'),  // 出口目录
       filename: 'main.js'  // 出口文件名
     },
+    // 配置vue的使用版本，runtime or full version
+    resolve: {
+      alias: {
+        vue: 'vue/dist/vue.min.js'
+      }
+    },
     module: {
       rules: [
         {
