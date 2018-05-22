@@ -28,17 +28,26 @@ package.json:该文件是npm的配置文件
 2, 安装babel-loader
 
 3，安装webpack4，添加webpack.config.js [参考](https://www.valentinog.com/blog/webpack-4-tutorial/)
+```
     > 配置babel-loader
+
     > 配置html编译插件
+
     > 配置css编译插件
+
     > 安装webpack-dev-server，热加载，（即每次改变代码都重新编译刷新）
+
     > 配置环境：mode:'production' || 'development', 打包跟不打包的区别
+```
 
 4, 配置webpack4 and babel7 for vue.js [参考](https://markus.oberlehner.net/blog/setting-up-a-vue-project-with-webpack-4-and-babel-7/)
+```
     > 配置vue-loader
+    
     > 配置scss-loader
+    
     > 配置file-loader
-
+```
 5, 应用vue-router [参考](https://scotch.io/tutorials/getting-started-with-vue-router)
 
 6, 应用vux
