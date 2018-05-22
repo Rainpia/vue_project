@@ -46,7 +46,7 @@ npm i webpack-cli --save-dev
 webpack.config.js:该文件是webpack的配置文件
 
 #### package.json
-npm，它是nodeJs的安装包工具，主要负责下载各种依赖包
+npm，它是Node.js的安装包工具，主要负责下载各种依赖包
 ```
 npm init
 ```
