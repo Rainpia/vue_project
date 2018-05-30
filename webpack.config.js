@@ -24,7 +24,7 @@ module.exports = {
     // 配置vue的使用版本，runtime or full version
     resolve: {
       alias: {
-        vue: 'vue/dist/vue.min.js'
+        vue: 'vue/dist/vue.js'
       }
     },
     module: {
