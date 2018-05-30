@@ -1,12 +1,13 @@
 <template>
 <div>
-    工作台
+    {{title}}
 </div>
 </template>
 
 <script>
 export default {
-  name: 'Header'
+  name: 'Header',
+  props:['title']
 }
 </script>
 <style scoped>
