@@ -2,7 +2,7 @@
 <div class="reading-list">
     <Header v-bind:title="title" show-back></Header>
     <Main>
-        <Search :placeholder="searchPlaceholderText"></Search>
+        <Search :placeholder="searchPlaceholderText" @search="search"></Search>
     </Main>
 </div>
 </template>
@@ -18,6 +18,11 @@ export default {
           title:'知识库',
           searchPlaceholderText:'请输入关键词检索知识条目',
           linkList:[]
+      }
+  },
+  methods : {
+      search:function(text){
+          console.log(text);
       }
   },
   components:{

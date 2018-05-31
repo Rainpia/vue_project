@@ -1,6 +1,6 @@
 <template>
 <div class="search-container">
-    <div class="icon-search">
+    <div class="icon-search" @click="$emit('search',inputValue)">
         <font-awesome-icon :icon="faSearch" />
     </div>
     <div class="input-container">
