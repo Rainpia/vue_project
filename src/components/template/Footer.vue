@@ -33,7 +33,7 @@ export default {
         i.active = i.id === item.id;
       });
       console.log(this.menuList);
-      // this.$router.push({name: item.link});
+      this.$router.push({name: item.link});
     }
   },
   computed: {
