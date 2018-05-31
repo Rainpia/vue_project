@@ -1,6 +1,6 @@
 <template>
 <div class="footer-contaner">
-    <div v-for="item in menuList" v-bind:key="item.id" v-on:click="go(item)"  v-bind:class="{ 'active': item.active }">
+    <div v-for="item in menuList" :key="item.id" @click="go(item)"  :class="{ 'active': item.active }">
       <font-awesome-icon :icon="item.icon" />
       <div>
           {{item.name}}
