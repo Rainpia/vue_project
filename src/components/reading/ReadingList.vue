@@ -1,6 +1,6 @@
 <template>
 <div class="reading-list">
-    <Header title="知识库"></Header>
+    <Header title="知识库" show-back></Header>
     <Main >
         list
     </Main>

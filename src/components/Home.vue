@@ -17,9 +17,6 @@ import Profile from './home/Profile.vue';
 import Nav from './home/Nav.vue';
 export default {
   name: 'Home',
-  props: {
-    msg: String
-  },
   components:{
       Header,
       Footer,
