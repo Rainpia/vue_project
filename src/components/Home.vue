@@ -1,6 +1,6 @@
 <template>
 <div>
-    <Header title="工作台"></Header>
+    <Header v-bind:title="title"></Header>
     <Main>
         <Profile></Profile>
         <Nav></Nav>
@@ -17,6 +17,11 @@ import Profile from './home/Profile.vue';
 import Nav from './home/Nav.vue';
 export default {
   name: 'Home',
+  data(){
+      return {
+          title:'工作台'
+      }
+  },
   components:{
       Header,
       Footer,

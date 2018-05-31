@@ -1,6 +1,6 @@
 <template>
 <div class="reading-list">
-    <Header title="知识库" show-back></Header>
+    <Header v-bind:title="title" show-back></Header>
     <Main >
         list
     </Main>
@@ -14,6 +14,7 @@ export default {
   name: 'ReadingList',
   data(){
       return {
+          title:'知识库',
           linkList:[]
       }
   },
