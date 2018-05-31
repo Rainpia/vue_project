@@ -1,5 +1,5 @@
 <template>
-<div class="main">
+<div class="main-container">
     <slot></slot>
 </div>
 </template>
@@ -10,7 +10,7 @@ export default {
 }
 </script>
 <style scoped>
-div.main{
+div.main-container{
     flex: 1;
     background: #ffffff;
     overflow: auto;
