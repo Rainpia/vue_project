@@ -37,18 +37,6 @@ export default {
     }
   },
   computed: {
-    getFaHome() {
-      return faHome;
-    },
-    getFaBookOpen() {
-      return faBookOpen;
-    },
-    getFaStickyNote() {
-      return faStickyNote;
-    },
-    getFaUser() {
-      return faUser;
-    }
   },
   components: {
     FontAwesomeIcon
