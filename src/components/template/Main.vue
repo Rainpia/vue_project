@@ -6,13 +6,15 @@
 
 <script>
 export default {
-  name: 'Header'
+  name: 'Main'
 }
 </script>
 <style scoped>
 div.main-container{
     flex: 1;
+    display: flex;
+    flex-direction: column;
     background: #ffffff;
-    overflow: auto;
+    color: #000000;
 }
 </style>

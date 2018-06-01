@@ -49,9 +49,6 @@ export default {
 </script>
 <style lang="scss" scoped>
 div.search-container{
-    background: #ffffff;
-    color: #000000;
-    font-size: 1.5rem;
     height: 60px;
     display: flex;
     flex-direction: row;
@@ -69,7 +66,6 @@ div.search-container{
         display: flex;
         position: relative;
         input{
-            font-size: 1.5rem;
             flex: 1;
             border: 0;
         }

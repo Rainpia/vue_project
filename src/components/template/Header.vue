@@ -32,23 +32,21 @@ export default {
 div.header-container{
     background: black;
     color: #ffffff;
-    font-size: 1.5rem;
     height: 60px;
     display: flex;
     flex-direction: row;
+    position: relative;
+    align-items: center;
+    justify-content: center;
     .icon-back{
-      width: 50px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      position: absolute;
+      left: 20px;
+      width: 30px;
       font-size: 2rem;
       cursor: pointer;
     }
     .title{
-        flex: 1;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+      font-size: 1.5rem;
     }
 }
 </style>
