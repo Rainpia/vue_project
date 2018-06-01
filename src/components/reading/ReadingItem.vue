@@ -4,7 +4,7 @@
         {{readingItem.title}}
     </div>
     <div class="content">
-        报错日志：{{readingItem.content}}
+        报错日志：{{readingItem.errorLog}}
     </div>
     <div class="info">
         <div class="author">
@@ -24,7 +24,7 @@ export default {
     readingItem: {
         id:Number,
         title:String,
-        content:String,
+        errorLog:String,
         author:String,
         updateDate:String
     }

@@ -1,0 +1,17 @@
+{
+    "code":1000,
+    "data":{
+        "id":0,
+        "title":"解决方案1",
+        "description":"数据库思考思考思考思考是受理受理的卡拉斯科历史地看是的SDK受理的历史地看。",
+        "generateReason":"数据库思考思考思考思考是受理受理的卡拉斯科历史地看是的SDK受理的历史地看。",
+        "content":"数据库思考思考思考思考是受理受理的卡拉斯科历史地看是的SDK受理的历史地看。",
+        "attach":null,
+        "readingCount":168,
+        "goodCount":21,
+        "category":"业务支撑系统",
+        "author":"尹润萍",
+        "createdDate":"2018-06-01"
+    },
+    "message":"success"
+}

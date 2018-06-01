@@ -1,10 +1,10 @@
 <template>
 <div class="reading-list">
-    <Header v-bind:title="title" show-back></Header>
+    <Header v-bind:title="title" show-back ></Header>
     <Main>
-        <Search :placeholder="searchPlaceholderText" @search="search"></Search>
+        <Search :placeholder="searchPlaceholderText" @search="search" ></Search>
         <scroll-container>
-            <reading-item v-for="item in readingList" :key="item.id" :readingItem="item"></reading-item>
+            <reading-item v-for="item in readingList" :key="item.id" :readingItem="item" @click.native="goToDetail(item)"></reading-item>
         </scroll-container>
     </Main>
 </div>
@@ -43,6 +43,9 @@ export default {
         .catch((err) => {
           console.log(err)
         })
+      },
+      goToDetail:function(item){
+          this.$router.push({name: 'reading-info',params:{id:item.id}});
       }
   },
   components:{
