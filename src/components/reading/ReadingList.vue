@@ -34,7 +34,7 @@ export default {
           console.log(text);
       },
       fetchReadingList() {
-        axios.get('./src/components/data/reading.json')
+        axios.get('./src/assets/data/reading.json')
         .then((resp) => {
             if(resp.data.code === 1000){
                 this.readingList = resp.data.data;

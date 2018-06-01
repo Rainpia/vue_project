@@ -102,7 +102,7 @@ export default {
           console.log(text);
       },
       fetchReadingInfo() {
-        axios.get('./src/components/data/readingInfo.json')
+        axios.get('./src/assets/data/readingInfo.json')
         .then((resp) => {
             if(resp.data.code === 1000){
                 this.info = resp.data.data;
