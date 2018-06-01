@@ -1,17 +1,18 @@
 <template>
 <div class="header-container">
-    <div v-if="showBack" class="icon-back" v-on:click="$router.go(-1)">
-      <font-awesome-icon :icon="faAngleLeft" />
-    </div>
-    <div class="title">
-      {{title}}
-    </div>
+  <mt-header :title="title">
+        <div v-if="showBack" v-on:click="$router.go(-1)" slot="left">
+            <mt-button icon="back"></mt-button>
+        </div>
+    </mt-header>
 </div>
 </template>
 
 <script>
 import FontAwesomeIcon from "@fortawesome/vue-fontawesome";
 import faAngleLeft from "@fortawesome/fontawesome-free-solid/faAngleLeft";
+import { Header } from 'mint-ui';
+import { Button } from 'mint-ui';
 export default {
   name: 'Header',
   props:{
@@ -24,29 +25,13 @@ export default {
     }
   },
   components: {
-    FontAwesomeIcon
+    FontAwesomeIcon,
+    [Header.name]:Header,
+    [Button.name]:Button
   }
 }
 </script>
 <style lang="scss" scoped>
 div.header-container{
-    background: black;
-    color: #ffffff;
-    height: 60px;
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    align-items: center;
-    justify-content: center;
-    .icon-back{
-      position: absolute;
-      left: 20px;
-      width: 30px;
-      font-size: 2rem;
-      cursor: pointer;
-    }
-    .title{
-      font-size: 1.5rem;
-    }
 }
 </style>
