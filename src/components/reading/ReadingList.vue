@@ -6,8 +6,8 @@
         <scroll-container>
             <reading-item v-for="item in readingList" :key="item.id" :readingItem="item" @click.native="goToDetail(item)"></reading-item>
         </scroll-container>
-          <button @click="sheetVisible = true">open an action sheet</button>
-        <action-sheet :actions="actions" v-model="sheetVisible"></action-sheet>
+        <mt-button type="default" @click="sheetVisible = true">排序</mt-button>
+        <mt-actionsheet :actions="actions" v-model="sheetVisible"></mt-actionsheet>
     </Main>
 </div>
 </template>
@@ -20,6 +20,7 @@ import ScrollContainer from './../template/ScrollContainer.vue';
 import ReadingItem from './ReadingItem.vue';
 import axios from 'axios'
 import { Actionsheet } from 'mint-ui';
+import { Button } from 'mint-ui';
 export default {
   name: 'ReadingList',
   data(){
@@ -28,10 +29,10 @@ export default {
           searchPlaceholderText:'请输入关键词检索知识条目',
           readingList:[],
           actions:[{
-            name: '拍照',
+            name: '创建时间',
             method: this.takePhoto
             }, {
-            name: '打开相册',
+            name: '更新时间',
             method: this.openAlbum
           }],
           sheetVisible: false,
@@ -74,7 +75,8 @@ export default {
       Main,
       ReadingItem,
       ScrollContainer,
-     'action-sheet': Actionsheet
+      [Actionsheet.name]:Actionsheet,
+      [Button.name]:Button
   }
 }
 </script>
