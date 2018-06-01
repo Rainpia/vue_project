@@ -16,31 +16,33 @@ import Search from './../template/Search.vue';
 import Main from './../template/Main.vue';
 import ScrollContainer from './../template/ScrollContainer.vue';
 import ReadingItem from './ReadingItem.vue';
+import axios from 'axios'
 export default {
   name: 'ReadingList',
   data(){
       return {
           title:'知识库',
           searchPlaceholderText:'请输入关键词检索知识条目',
-          readingList:[{
-              id:0,
-              title:'解决方案1',
-              content:'数据库思考思考思考思考是受理受理的卡拉斯科历史地看是的SDK受理的历史地看。',
-              author:'富莹',
-              updateDate:'2018-06-01'
-          },
-          {
-              id:1,
-              title:'解决方案1',
-              content:'数据库思考思考思考思考是受理受理的卡拉斯科历史地看是的SDK受理的历史地看。',
-              author:'富莹',
-              updateDate:'2018-06-01'
-          }],
+          readingList:[],
       }
+  },
+  created() {
+      this.fetchReadingList()
   },
   methods : {
       search:function(text){
           console.log(text);
+      },
+      fetchReadingList() {
+        axios.get('./src/components/data/reading.json')
+        .then((resp) => {
+            if(resp.data.code === 1000){
+                this.readingList = resp.data.data;
+            }
+        })
+        .catch((err) => {
+          console.log(err)
+        })
       }
   },
   components:{
