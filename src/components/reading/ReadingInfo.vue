@@ -7,12 +7,8 @@
                 {{info.title}}
             </div>
             <div>
-                <div class="section-container">
-                    <div class="section-title">
-                        知识详情
-                    </div>
-                    <div class="section-content">
-                        <div>
+                <Section title="知识详情">
+                    <div>
                             症状描述
                             <div>
                                 {{info.description}}
@@ -36,14 +32,9 @@
                                 {{info.attach}} 
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="section-container">
-                    <div class="section-title">
-                        案例总结
-                    </div>
-                    <div class="section-content">
-                        <div>
+                </Section>
+                <Section title="案例总结">
+                    <div>
                             阅读数：{{info.readingCount}}  点赞数：{{info.goodCount}}
                         </div>
                         <div>
@@ -52,24 +43,18 @@
                         <div>
                             创建人：{{info.author}}  创建时间：{{info.createdDate}}
                         </div>
-                    </div>
-                </div>
-                <div class="section-container ">
-                    <div class="section-title">
-                        热门知识
-                    </div>
-                    <div class="section-content hot-reading">
-                        <div>
+                </Section>
+                <Section title="热门知识">
+                        <div class="link">
                             变电站存储
                         </div>
-                        <div>
+                        <div class="link">
                             数据同步失败
                         </div>
-                        <div>
+                        <div class="link">
                             ATM机设备异常
                         </div>
-                    </div>
-                </div>
+                </Section>
             </div>
         </scroll-container>
     </Main>
@@ -80,6 +65,7 @@
 import Header from './../template/Header.vue';
 import Search from './../template/Search.vue';
 import Main from './../template/Main.vue';
+import Section from './../template/Section.vue';
 import ScrollContainer from './../template/ScrollContainer.vue';
 import ReadingItem from './ReadingItem.vue';
 import axios from 'axios'
@@ -118,6 +104,7 @@ export default {
       Header,
       Search,
       Main,
+      Section,
       ReadingItem,
       ScrollContainer
   }
@@ -129,22 +116,8 @@ export default {
         font-size: 1.4rem;
         padding: 15px 10px;
     }
-    .section-container{
-        .section-title{
-            padding: 20px 10px;
-            background: #d9d9d9;
-        }
-        .section-content{
-            padding: 15px 10px;
-            >div{
-                padding: 10px 0;
-            }
-            &.hot-reading{
-                >div{
-                    color: #26a2ff;
-                }
-            }
-        }
+    .link{
+        color: #26a2ff;
     }
 
 }
