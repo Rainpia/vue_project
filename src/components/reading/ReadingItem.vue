@@ -44,10 +44,10 @@ export default {
 <style lang="scss" scoped>
 div.reading-item-container{
     padding: 10px;
-    border-bottom: 1px solid #000000;
+    border-bottom: 1px solid #d9d9d9;
     .title{
         font-size: 1.4rem;
-        color: blue;
+        color: #26a2ff;
         margin-bottom: 5px;
     }
     .info{

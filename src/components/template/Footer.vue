@@ -59,7 +59,7 @@ div.footer-contaner {
     &.active {
       div,
       svg {
-        color: green;
+        color: #26a2ff;
         outline: none;
       }
     }

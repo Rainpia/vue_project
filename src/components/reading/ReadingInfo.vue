@@ -54,11 +54,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="section-container">
+                <div class="section-container ">
                     <div class="section-title">
                         热门知识
                     </div>
-                    <div class="section-content">
+                    <div class="section-content hot-reading">
                         <div>
                             变电站存储
                         </div>
@@ -138,6 +138,11 @@ export default {
             padding: 15px 10px;
             >div{
                 padding: 10px 0;
+            }
+            &.hot-reading{
+                >div{
+                    color: #26a2ff;
+                }
             }
         }
     }

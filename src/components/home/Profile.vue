@@ -19,7 +19,7 @@ div{
         max-width: 140px;
         max-height: 140px;
         border-radius: 50%;
-        background: blue;
+        background: #26a2ff;
         margin: 30px auto;
     }
     .name,.address{

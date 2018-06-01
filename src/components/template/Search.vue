@@ -52,7 +52,7 @@ div.search-container{
     height: 60px;
     display: flex;
     flex-direction: row;
-    border-bottom: 1px solid #000000;
+    border-bottom: 1px solid #d9d9d9;
     .icon-search{
       width: 50px;
       display: flex;
@@ -60,6 +60,7 @@ div.search-container{
       justify-content: center;
       font-size: 2rem;
       cursor: pointer;
+      color:#d9d9d9;
     }
     .input-container{
         flex: 1;
