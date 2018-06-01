@@ -117,6 +117,7 @@ export default {
         padding: 15px 10px;
     }
     .link{
+        margin: 5px 0;
         color: #26a2ff;
     }
 
