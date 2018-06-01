@@ -132,7 +132,7 @@ export default {
     .section-container{
         .section-title{
             padding: 20px 10px;
-            background: grey;
+            background: #d9d9d9;
         }
         .section-content{
             padding: 15px 10px;
