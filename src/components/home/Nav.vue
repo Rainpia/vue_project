@@ -1,7 +1,7 @@
 <template>
 <div>
     <div class="nav-container">
-        <div class="item" v-for="item in linkList" :key="item.id">
+        <div class="item" v-for="item in linkList" :key="item.id" @click="go(item)" >
             <router-link to="">
                 <div class="icon"></div>
                 <div class="text">
@@ -19,14 +19,19 @@ export default {
   data(){
       return {
           linkList:[
-              {id:0,name:'新建工单'},
+              {id:0,name:'新建工单',link:'service-item'},
               {id:1,name:'我发起的'},
               {id:2,name:'代受理的'},
               {id:3,name:'未完成的'},
               {id:4,name:'抄送我的'},
               {id:5,name:'全部'}]
       }
-  }
+  },
+  methods: {
+    go: function(item) {
+      this.$router.push({name: item.link});
+    }
+  },
 }
 </script>
 <style lang="scss" scoped>
