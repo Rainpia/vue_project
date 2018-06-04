@@ -63,7 +63,6 @@
 
 <script>
 import Header from './../template/Header.vue';
-import Search from './../template/Search.vue';
 import Main from './../template/Main.vue';
 import Section from './../template/Section.vue';
 import ScrollContainer from './../template/ScrollContainer.vue';
@@ -84,9 +83,6 @@ export default {
       console.log(this.$route.params);
   },
   methods : {
-      search:function(text){
-          console.log(text);
-      },
       fetchReadingInfo() {
         axios.get('./src/assets/data/readingInfo.json')
         .then((resp) => {
@@ -102,7 +98,6 @@ export default {
   
   components:{
       Header,
-      Search,
       Main,
       Section,
       ReadingItem,
