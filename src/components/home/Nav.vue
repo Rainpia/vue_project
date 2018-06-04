@@ -21,15 +21,15 @@ export default {
           linkList:[
               {id:0,name:'新建工单',link:'service-item'},
               {id:1,name:'我发起的',link:'work-order-from-me'},
-              {id:2,name:'代受理的'},
-              {id:3,name:'未完成的'},
-              {id:4,name:'抄送我的'},
-              {id:5,name:'全部'}]
+              {id:2,name:'代受理的',link: 'work-order-list',params:{tabId:"1"}},
+              {id:3,name:'未完成的',link: 'work-order-list',params:{tabId:"2"}},
+              {id:4,name:'抄送我的',link: 'work-order-list',params:{tabId:"3"}},
+              {id:5,name:'全部',link: 'work-order-list',params:{tabId:"4"}}]
       }
   },
   methods: {
     go: function(item) {
-      this.$router.push({name: item.link});
+      this.$router.push({name: item.link,params:item.params});
     }
   },
 }

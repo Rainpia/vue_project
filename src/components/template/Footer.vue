@@ -22,7 +22,7 @@ export default {
       menuList: [
         { id: 0, name: "主页", icon: faHome, link: "home", active: true },
         { id: 1, name: "知识", icon: faBookOpen, link: "reading-list",active: false },
-        { id: 2, name: "工单", icon: faStickyNote,active: false },
+        { id: 2, name: "工单", icon: faStickyNote, link: 'work-order-list',params:{tabId:"4"}, active: false },
         { id: 3, name: "个人", icon: faUser ,active: false}
       ]
     };
@@ -33,7 +33,7 @@ export default {
         i.active = i.id === item.id;
       });
       console.log(this.menuList);
-      this.$router.push({name: item.link});
+      this.$router.push({name: item.link, params:item.params});
     }
   },
   computed: {
