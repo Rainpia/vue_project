@@ -8,6 +8,7 @@ import WorkOrderForm from './components/work-order/work-order-form.vue'
 import WorkOrderFromMe from './components/work-order/work-order-from-me.vue'
 import WorkOrderInfo from './components/work-order/work-order-info.vue'
 import WorkOrderList from './components/work-order/work-order-list.vue'
+import WorkOrderCheck from './components/work-order/work-order-check.vue'
 Vue.use(Router)
 
 export default new Router({
@@ -51,6 +52,11 @@ export default new Router({
       path: '/work-order-list',
       name: 'work-order-list',
       component: WorkOrderList
+    },
+    {
+      path: '/work-order-check',
+      name: 'work-order-check',
+      component: WorkOrderCheck
     }
   ]
 })
