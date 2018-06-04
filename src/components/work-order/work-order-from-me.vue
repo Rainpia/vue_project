@@ -85,7 +85,7 @@ export default {
         });
     },
     goToDetail: function(item) {
-    //   this.$router.push({ name: "reading-info", params: { id: item.id } });
+      this.$router.push({ name: "work-order-info", params: { id: item.id } });
     }
   },
   components: {
