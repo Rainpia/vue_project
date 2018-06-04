@@ -62,7 +62,7 @@ export default {
     };
   },
   created() {
-    this.fetchReadingList();
+    this.fetchWorkOrderListFromMe();
   },
   mounted() {},
   methods: {
@@ -72,7 +72,7 @@ export default {
     search: function(text) {
         this.updateWorkOrder(text);
     },
-    fetchReadingList() {
+    fetchWorkOrderListFromMe() {
       axios
         .get("./src/assets/data/workOrder.json")
         .then(resp => {
