@@ -5,6 +5,7 @@ import ReadingList from './components/reading/ReadingList.vue'
 import ReadingInfo from './components/reading/ReadingInfo.vue'
 import ServiceItem from './components/work-order/service-item.vue'
 import WorkOrderForm from './components/work-order/work-order-form.vue'
+import WorkOrderFromMe from './components/work-order/work-order-from-me.vue'
 Vue.use(Router)
 
 export default new Router({
@@ -30,9 +31,14 @@ export default new Router({
       component: ServiceItem
     },
     {
-      path: '/work-order-from',
-      name: 'work-order-from',
+      path: '/work-order-form',
+      name: 'work-order-form',
       component: WorkOrderForm
+    },
+    {
+      path: '/work-order-from-me',
+      name: 'work-order-from-me',
+      component: WorkOrderFromMe
     }
   ]
 })

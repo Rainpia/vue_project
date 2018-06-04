@@ -17,7 +17,7 @@ export default {
       return {
           title:'请选择服务条目',
           categorys:[
-              {text:'更换配置申请',id:0,link:'work-order-from'},
+              {text:'更换配置申请',id:0,link:'work-order-form'},
               {text:'软件的安装与升级',id:1},
               {text:'维护与保修',id:2}
           ]

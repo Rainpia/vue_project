@@ -20,7 +20,7 @@ export default {
       return {
           linkList:[
               {id:0,name:'新建工单',link:'service-item'},
-              {id:1,name:'我发起的'},
+              {id:1,name:'我发起的',link:'work-order-from-me'},
               {id:2,name:'代受理的'},
               {id:3,name:'未完成的'},
               {id:4,name:'抄送我的'},

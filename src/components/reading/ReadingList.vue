@@ -30,10 +30,10 @@ export default {
           readingList:[],
           actions:[{
             name: '创建时间',
-            method: this.takePhoto
+            method: this.updateReading('创建时间')
             }, {
             name: '更新时间',
-            method: this.openAlbum
+            method:  this.updateReading('更新时间')
           }],
           sheetVisible: false,
       }
@@ -44,15 +44,11 @@ export default {
   mounted() {
   },
   methods : {
-      takePhoto() {
-      console.log('taking photo');
-    },
-
-    openAlbum() {
-      console.log('opening album');
-    },
+      updateReading(type) {
+        console.log(type);
+        },
       search:function(text){
-          console.log(text);
+          this.updateReading(text);
       },
       fetchReadingList() {
         axios.get('./src/assets/data/reading.json')
